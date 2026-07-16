@@ -55,7 +55,7 @@ def _build_model():
         from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
         logger.info("Using HuggingFace Inference API as the agent's LLM")
         llm = HuggingFaceEndpoint(
-            repo_id="meta-llama/Llama-3.1-8B-Instruct",
+            repo_id="Qwen/Qwen2.5-7B-Instruct",
             task="text-generation",
             temperature=0.01,  # HuggingFaceEndpoint rejects exactly 0
         )
